@@ -33,3 +33,55 @@ git branch
 Allows us to check which branch we are working on. The active branch will be highlighted in green with an asterisk
 
 Make sure you are working in the develop branch!
+
+## Ruby Programming Language
+
+We talked about some basic Ruby objects. We talked about the concept that everything in ruby is an object.
+
+The best way to learn is to play, so to get into the ruby console simply type ```irb```
+
+### Basic Data Types
+
+```
+1 + 1
+```
+We are adding 2 ```Integer``` together. ```Integer``` are also known as ```Fixnum```
+
+```
+puts "Hello World"
+```
+We are outputting a ```String``` to the console 
+
+```
+2.2 + 3.2
+```
+This will add 2 ```Float``` together
+
+### Arrays
+
+```
+numbers = [1, 2, 3, 4]
+```
+This will create an array of numbers
+
+You can also create array using:
+```
+numbers = Array.new()
+```
+This will create an empty array for you
+
+To add items to an array you can use ```push```
+```
+numbers.push(1)
+```
+This will push the number 1 into the ```numbers``` ```Array```
+
+To loop out items in an array we can use ```.each``` 
+```
+numbers.each do |n|
+  puts n
+end
+```
+In this loop n will represent each number in the array so for example if we had an array ```[6, 7, 8]``` the loop will run 3 times and each time |n| will change. In side of our code block we call ```puts n``` this line will basically output the value of ```n``` to the console.
+
+To learn more about arrays and what they can do simply head over to this link [Ruby Array](http://ruby-doc.org/core-2.0.0/Array.html)
