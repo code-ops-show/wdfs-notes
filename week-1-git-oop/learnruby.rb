@@ -1,5 +1,9 @@
 class Human
-  attr_accessor :name, :age, :location
+  # attr_reader will only give us getter
+  # attr_writer will only give us setter
+
+  # attr_accessor will give us both setter and getter
+  attr_accessor :name, :age, :location 
 
   def initialize(name, age, location)
     @name     = name
