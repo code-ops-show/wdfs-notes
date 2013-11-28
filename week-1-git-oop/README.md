@@ -136,9 +136,9 @@ class Car
 end
 
 camry = Car.new('Toyota', 2008, 'Black', 'Zack')
-
-now the variable ```camry``` holds the object that represents a car. We can also say that ```camry``` is an instance of the class ```Car``` 
 ```
+Now the variable ```camry``` holds the object that represents a car. We can also say that ```camry``` is an instance of the class ```Car``` 
+
 
 
 
