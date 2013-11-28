@@ -59,6 +59,8 @@ This will add 2 ```Float``` together
 
 ### Arrays
 
+Arrays are basically a list of something, thats probably the easiest way to think about arrays.
+
 ```
 numbers = [1, 2, 3, 4]
 ```
@@ -77,7 +79,7 @@ numbers.push(1)
 This will push the number 1 into the ```numbers``` ```Array```
 
 To loop out items in an array we can use ```.each``` 
-```
+```ruby
 numbers.each do |n|
   puts n
 end
@@ -85,3 +87,32 @@ end
 In this loop n will represent each number in the array so for example if we had an array ```[6, 7, 8]``` the loop will run 3 times and each time |n| will change. In side of our code block we call ```puts n``` this line will basically output the value of ```n``` to the console.
 
 To learn more about arrays and what they can do simply head over to this link [Ruby Array](http://ruby-doc.org/core-2.0.0/Array.html)
+
+### Hashes
+
+Hashes have 2 basic things, a key and a value. See this example
+```ruby
+person = { name: 'Zack', age: 29, location: 'Bangkok' }
+```
+In this example we have a hash with 3 keys, the name, age and location. These 3 attributes / properties represent a person
+
+you can store hashes in an array and arrays in a hash
+```ruby
+person_1 = { name: "Blah", age: 23, location: 'Thailand' }
+person_2 = { name: "Yay", age: 43, location: 'China' }
+
+# we can put person_1 and person_2 in an array
+people = [person_1, person_2]
+
+# we can loop out the names of person_1 and person_2 in the array
+people.each do |p|
+  # in here the 'p' represent the hash of the person
+  puts p[:name] # this will out put the person's name 
+end
+```
+In the ```.each``` the first time around the 'p' will represent ```person_1``` and the second time around it will represent ```person_2```
+
+To learn more about what you can do with hashes check out this link [Ruby Hash](http://www.ruby-doc.org/core-2.0.0/Hash.html)
+
+
+
