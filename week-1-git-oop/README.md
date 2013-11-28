@@ -114,5 +114,31 @@ In the ```.each``` the first time around the 'p' will represent ```person_1``` a
 
 To learn more about what you can do with hashes check out this link [Ruby Hash](http://www.ruby-doc.org/core-2.0.0/Hash.html)
 
+### Objects
+
+Ojbects are a way of allowing us to represent 'stuff' in the computer. Objects are usually used to describe the attributes / properties of something and the capabilities it has. For example:
+
+```ruby
+class Car 
+  attr_reader :make, :manufactured_year, :color
+  attr_accessor :owner
+
+  def initialize(make, year, color, owner)
+    @make = make
+    @manufactured_year = year
+    @color = color
+    @owner = owner
+  end
+
+  def drive
+    # some statements to move the car
+  end
+end
+
+camry = Car.new('Toyota', 2008, 'Black', 'Zack')
+
+now the variable ```camry``` holds the object that represents a car. We can also say that ```camry``` is an instance of the class ```Car``` 
+```
+
 
 
