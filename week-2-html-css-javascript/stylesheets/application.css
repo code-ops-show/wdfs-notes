@@ -1,0 +1,43 @@
+body { 
+  margin-top: 20px;
+}
+
+/*body { 
+  background: black;
+  color: white;
+}
+
+h1 {
+  color: red;
+}
+
+div { 
+  background: green;
+}
+
+div#main-content {
+  background: blue;
+}
+
+div#posts { 
+  background: orange;
+}
+
+div#posts div { 
+  background: none;
+}
+
+div#posts > div { 
+  background: yellow;
+  color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.be-red { 
+  background: red !important;
+}
+
+div#posts div.title { 
+  margin-bottom: 20px;
+}*/
