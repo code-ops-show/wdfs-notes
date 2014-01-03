@@ -7,21 +7,21 @@ A basic html page will have a structure like this
 ```html
 <!doctype html>
 <html>
-    <head>
-      <title>Page title goes here</title>
-    </head>
-    <body>
-      <p>content goes here</p>
-    </body>
+  <head>
+    <title>Page title goes here</title>
+  </head>
+  <body>
+    <p>content goes here</p>
+  </body>
 </html>
 ```
 
 We generally start off with 3 directories 
 
-	- stylesheets
-	- javascripts
-	- images
-	
+  - stylesheets
+  - javascripts
+  - images
+  
 Stylesheets folder will hold all of our css files, javascripts hold all of our js files and images hold all the image elements that are used to build up the page.
 
 ## Twitter Bootstrap
@@ -39,7 +39,7 @@ In your index.html in the head tag include the following
 <script src="javascripts/jquery.js"></script>
 <script src="javascripts/bootstrap.js"></script>
 ```
-	  
+    
 jQuery is a library that allowes easy access to dom elements. We will talk more about jQuery later on. For now we need to include jquery before bootstrap because bootstrap.js depends on jQuery.
 
 Those 3 files make up the basic foundation of our page. You can now utilize twitter bootstrap and all of its components. 
@@ -53,7 +53,7 @@ You can do so by creating a new file in your `stylesheets` directory call it `st
 ```html
 <link rel="stylesheet" href="stylesheets/styles.css">
 ```
-	
+  
 You can now add all your customizations to the `styles.css` file and it will effect your `index.html` file.
 
 #### Customized Javascript
@@ -62,7 +62,7 @@ To customize your javascript you can do the samething. Simply create a file call
 
 ```html
 <script src="javascripts/application.js"></script>
-```	
+``` 
 
 Now you can add any custom javascripts for your page into this file.
 
@@ -96,7 +96,7 @@ A beginning tag `<p>` a middle content `Content` and an end tag `</p>` There are
 
 <span>great for inline content</span>
 ```
-	
+  
 Some HTML tags close themselves for example checkout the following tags
 
 ```html
@@ -104,7 +104,7 @@ Some HTML tags close themselves for example checkout the following tags
 <hr />
 <br />
 ```
-	
+  
 To find out more about html tags head on over to the Mozilla Developer Network [MDN Html](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
 ## CSS Basics
@@ -116,7 +116,7 @@ body {
   background: red;
 }
 ```
-	
+  
 The `body` in this case is what we call the **selector** then we have `{}` which will encapsulate our css rule. the `background: red;` is the rule that will define how our **selector** in this case the `body` is going to look. In this case the body will have a red background.
 
 The selector can be the html element or you can select specific html tags using ids. For example.
@@ -136,7 +136,7 @@ div#hero {
   background: #eee;
 }
 ```
-	
+  
 We can also select elements with in another element for example if we had a `<p>` inside of our `div#hero` 
 
 
@@ -145,7 +145,7 @@ We can also select elements with in another element for example if we had a `<p>
   <p>paragraph in the hero tag</p>
 </div>
 ```
-	
+  
 To select the paragraph tag within the `div#hero` in css all we have to do is 
 
 ```css
@@ -154,7 +154,7 @@ div#hero p {
   color: black;
 }
 ```
-	
+  
 There is another way for us to select element and that is using classes. See the below example
 
 ```html
@@ -166,7 +166,7 @@ There is another way for us to select element and that is using classes. See the
   ... more green content ...
 </div>
 ```
-	
+  
 The difference between ids and classes are that you can only have 1 of any id on the page. Example: 
 
 ```html
@@ -188,7 +188,7 @@ div.green {
   color: green;
 }
 ```
-	
+  
 This will set the style for all the elements on the page with the class `green`
 
 To learn more about CSS checkout [MDN Css](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -206,7 +206,7 @@ The jQuery documentation is very well written. You can read through it and very 
   ... some content ...
 </div>
 ```
-	
+  
 and in your `application.js` file try typing this in.
 
 ```javascript
@@ -216,14 +216,14 @@ $(document).ready(function() {
   });
 });
 ```
-	
+  
 You may be wondering what is all this document ready business. Basically the `$(document).ready();` function is telling the browser to only run the function inside when the document has completely loaded. We need to do this because sometimes the document will have only partially loaded and the function will run but for example if `div#hero` doesn't exist when the page is loading the function won't work. 
 
 `toggleSlide` is another jQuery function try searching for it in the jQuery documentation to see what it does. It will very easy allow you to build accordion based navigation.
 
 Try out some other jquery functions like `fadeIn` `fadeOut` `toggleFade`.
-	
-	
+  
+  
 
 
 
