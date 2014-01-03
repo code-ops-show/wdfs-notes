@@ -4,16 +4,18 @@ In the second week we take a look at working with html, css and javascript. We w
 
 A basic html page will have a structure like this
 
-    <!doctype html>
-    <html>
-        <head>
-          <title>Page title goes here</title>
-        </head>
-        <body>
-          <p>content goes here</p>
-        </body>
-    </html>
-    
+```html
+<!doctype html>
+<html>
+    <head>
+      <title>Page title goes here</title>
+    </head>
+    <body>
+      <p>content goes here</p>
+    </body>
+</html>
+```
+
 We generally start off with 3 directories 
 
 	- stylesheets
@@ -32,9 +34,11 @@ Check out [Twitter Bootstrap Documentation / Download](http://getbootstrap.com)
 
 In your index.html in the head tag include the following
 
-	  <link rel="stylesheet" href="stylesheets/bootstrap.css">
-	  <script src="javascripts/jquery.js"></script>
-	  <script src="javascripts/bootstrap.js"></script>
+```html
+<link rel="stylesheet" href="stylesheets/bootstrap.css">
+<script src="javascripts/jquery.js"></script>
+<script src="javascripts/bootstrap.js"></script>
+```
 	  
 jQuery is a library that allowes easy access to dom elements. We will talk more about jQuery later on. For now we need to include jquery before bootstrap because bootstrap.js depends on jQuery.
 
@@ -46,7 +50,9 @@ If you wish to customize twitter bootstrap its usually a best practice to includ
 
 You can do so by creating a new file in your `stylesheets` directory call it `styles.css` and then simply include it in your `index.html` file like this.
 
-	<link rel="stylesheet" href="stylesheets/styles.css">	
+```html
+<link rel="stylesheet" href="stylesheets/styles.css">
+```
 	
 You can now add all your customizations to the `styles.css` file and it will effect your `index.html` file.
 
@@ -54,46 +60,50 @@ You can now add all your customizations to the `styles.css` file and it will eff
 
 To customize your javascript you can do the samething. Simply create a file called `application.js` in your `javascripts` folder and then include it in your index.html file like so.
 
-	<script src="javascripts/application.js"></script>
-	
+```html
+<script src="javascripts/application.js"></script>
+```	
+
 Now you can add any custom javascripts for your page into this file.
 
 ## HTML Basics
 
 A basic html tag has 3 parts:
 
-	<p>Content</p>
-	
+```html
+<p>Content</p>
+```
+
 A beginning tag `<p>` a middle content `Content` and an end tag `</p>` There are many kinds of html tags suitable for different purposes. Here are some examples
 
-	```html
-	<h1>Heading 1</h1>
-	<h2>Heading 2</h1>
-	.
-	.
-	.
-	<h6>heading 6</h6>
-	
-	<p>paragraph</p>
-	<strong>emphasize this text</strong>
-	
-	<article>
-	  <section></section>
-	  <section></section>
-	</article>
-	
-	<div>Stands for 'division'</div>
-	
-	<span>great for inline content</span>
-	```
+```html
+<h1>Heading 1</h1>
+<h2>Heading 2</h1>
+.
+.
+.
+<h6>heading 6</h6>
+
+<p>paragraph</p>
+<strong>emphasize this text</strong>
+
+<article>
+  <section></section>
+  <section></section>
+</article>
+
+<div>Stands for 'division'</div>
+
+<span>great for inline content</span>
+```
 	
 Some HTML tags close themselves for example checkout the following tags
 
-	```html
-	<img src='path/to/file' alt='image description' />
-	<hr />
-	<br />
-	```
+```html
+<img src='path/to/file' alt='image description' />
+<hr />
+<br />
+```
 	
 To find out more about html tags head on over to the Mozilla Developer Network [MDN Html](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
@@ -101,9 +111,11 @@ To find out more about html tags head on over to the Mozilla Developer Network [
 
 CSS stands for cascading style sheets, it looks like this
 
-	body { 
-	  background: red;
-	}
+```css
+body { 
+  background: red;
+}
+```
 	
 The `body` in this case is what we call the **selector** then we have `{}` which will encapsulate our css rule. the `background: red;` is the rule that will define how our **selector** in this case the `body` is going to look. In this case the body will have a red background.
 
@@ -159,7 +171,7 @@ The difference between ids and classes are that you can only have 1 of any id on
 
 ```html
 <div id='hero'>
- 
+
 </div>
 
 <div id='hero'>
