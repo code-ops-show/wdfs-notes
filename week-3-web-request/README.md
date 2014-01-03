@@ -32,3 +32,31 @@ In a typical web request the browser is the client since the request usually ori
 ## [Sinatra](http://www.sinatrarb.com)
 
 Sinatra is a minimal ruby based web framework. With it we will be building our very own web server that will serve html pages to the browser.
+
+See the source code for week 3 to figure out how to start building your own web server using sinatra.
+
+## Shotgun
+
+Shotgun is a gem used to start up rack applications (which is what sinatra is based on)
+
+Install the shotgun gem
+
+```shell
+$ gem install shotgun
+```
+
+You will need to add a `config.ru` file to start your sinatra application
+
+```ruby
+require './application'
+
+run Application
+```
+
+You can run your application by typing
+
+```shell
+$ shotgun
+```
+
+This should start your webserver type the url into your browser and hit enter!
