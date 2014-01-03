@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Zack's Sinatra Site</title>
+  <meta name="description" content="html 5 basic template">
+  <meta name="author" content="Zack Siri">
+  <%= css :application, :media => 'screen' %>
+  <%= js  :application %>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div id='main-nav' class='container'>
+    <%= erb 'base/_navbar'.to_sym %>
+  </div>
+  <div id='main-content' class='container'>
+    <%= yield %>
+  </div>
+</body>
+</html>
