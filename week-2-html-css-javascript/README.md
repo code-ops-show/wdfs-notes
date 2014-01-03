@@ -46,7 +46,7 @@ If you wish to customize twitter bootstrap its usually a best practice to includ
 
 You can do so by creating a new file in your `stylesheets` directory call it `styles.css` and then simply include it in your `index.html` file like this.
 
-	<link rel="stylesheet" href="stylesheets/styles.css">
+	<link rel="stylesheet" href="stylesheets/styles.css">	
 	
 You can now add all your customizations to the `styles.css` file and it will effect your `index.html` file.
 
