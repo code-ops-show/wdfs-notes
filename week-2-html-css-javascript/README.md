@@ -110,72 +110,72 @@ The `body` in this case is what we call the **selector** then we have `{}` which
 The selector can be the html element or you can select specific html tags using ids. For example.
 
  
-	```html
-	<div id='hero'>
-	  ... content for hero ...
-	</div>
-	```
+```html
+<div id='hero'>
+  ... content for hero ...
+</div>
+```
 
 To select this div in css we can do something like this
 
-	```css
-	div#hero { 
-	  font-size: 16px;
-	  background: #eee;
-	}
-	```
+```css
+div#hero { 
+  font-size: 16px;
+  background: #eee;
+}
+```
 	
 We can also select elements with in another element for example if we had a `<p>` inside of our `div#hero` 
 
 
-	```html
-	<div id='hero'>
-	  <p>paragraph in the hero tag</p>
-	</div>
-	```
+```html
+<div id='hero'>
+  <p>paragraph in the hero tag</p>
+</div>
+```
 	
 To select the paragraph tag within the `div#hero` in css all we have to do is 
 
-	```css
-	div#hero p { 
-	  font-size: 18px;
-	  color: black;
-	}
-	```
+```css
+div#hero p { 
+  font-size: 18px;
+  color: black;
+}
+```
 	
 There is another way for us to select element and that is using classes. See the below example
 
-	```html
-	<div class='green'>
-	  ... content goes here ...
-	</div>
-	
-	<div class='green'>
-	  ... more green content ...
-	</div>
-	```
+```html
+<div class='green'>
+  ... content goes here ...
+</div>
+
+<div class='green'>
+  ... more green content ...
+</div>
+```
 	
 The difference between ids and classes are that you can only have 1 of any id on the page. Example: 
 
-	```html
-	<div id='hero'>
-	 
-	</div>
-	
-	<div id='hero'>
-	
-	</div>
-	```
+```html
+<div id='hero'>
+ 
+</div>
+
+<div id='hero'>
+
+</div>
+```
 
 Is considered invalid html. You can only have 1 element with `hero` on the page. However with classes you can have multiple elements on the page having the same class. 
 
 Looking at our example if we wanted to make the text in the html element green all we would have to do is
 
-	```css
-	div.green { 
-	  color: green;
-	}
-	```
+```css
+div.green { 
+  color: green;
+}
+```
 	
 This will set the style for all the elements on the page with the class `green`
 
@@ -189,21 +189,21 @@ In this course we are going to start by working with [jQuery](http://jquery.com)
 
 The jQuery documentation is very well written. You can read through it and very quickly build cool things with it. For example try the following example.
 
-	```html
-	<div id='hero'>
-	  ... some content ...
-	</div>
-	```
+```html
+<div id='hero'>
+  ... some content ...
+</div>
+```
 	
 and in your `application.js` file try typing this in.
 
-	```javascript
-	$(document).ready(function() {
-	  $('div#hero').click(function() {
-	    $(this).toggleSlide();
-	  });
-	});
-	```
+```javascript
+$(document).ready(function() {
+  $('div#hero').click(function() {
+    $(this).toggleSlide();
+  });
+});
+```
 	
 You may be wondering what is all this document ready business. Basically the `$(document).ready();` function is telling the browser to only run the function inside when the document has completely loaded. We need to do this because sometimes the document will have only partially loaded and the function will run but for example if `div#hero` doesn't exist when the page is loading the function won't work. 
 
