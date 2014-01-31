@@ -1,0 +1,9 @@
+user_zack:
+  name: 'Zack Siri'
+  email: 'zack@blah.com'
+  encrypted_password: '12345678'
+
+user_fa:
+  name: 'pimpo'
+  email: 'pimpo@gmail.com'
+  encrypted_password: '12345678'

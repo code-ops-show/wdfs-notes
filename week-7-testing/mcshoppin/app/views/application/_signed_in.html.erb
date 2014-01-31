@@ -1,0 +1,9 @@
+<li>
+  <%= link_to current_user.email,edit_user_registration_path %>
+</li>
+<li>
+  <%= link_to "Cart (#{current_order.items.count})", cart_path %>
+</li>
+<li>
+  <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+</li>

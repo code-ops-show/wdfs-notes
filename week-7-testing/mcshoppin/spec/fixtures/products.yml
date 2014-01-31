@@ -1,0 +1,14 @@
+product_towel:
+  name: 'Towel'
+  stock: 0
+  price: 200
+
+product_bread:
+  name: 'Bread'
+  stock: 10
+  price: 40
+
+product_iphone: 
+  name: 'iPhone 5s'
+  stock: 5
+  price: 20000
